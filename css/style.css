@@ -1,153 +1,80 @@
 body {
   background-color: #dadada;
+  font-family: sans-serif;
   font-size: 10px;
-  font-family: system-ui, sans-serif;
   }
 
-h1 {
-  font-family: Georgia, serif;
-}
 .container{
-  display: block;
-
+  margin: 0px auto;
+  width: 100%;
 }
 
-.mod {
-  text-align: center;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
-
+.container> h1 {
+margin-top:1em;
+margin-bottom: 1em;
+font-family:sans-serif;
+font-size:2.24em;
+letter-spacing:.15em;
+text-align:left;
+text-transform:uppercase;
 }
 
-.emphasis{
-  font-variant: small-caps;
-  font-size: 2em;
-  letter-spacing: .05em;
-  font-weight: 500;
-  font-family: system-ui, sans-serif;
+.preview {
+  height:30em;
+  width: 100%;
+  background-size:cover;
+  background-position:center;
+}
+
+.preview> h1 {
+font-size:2em;
+padding:10%;
+text-align: left;
+font-family: serif;
+}
+
+.baku {
+  background-image: url("../images/baku.jpg");
+}
+
+.london {
+  background-image: url("../images/london.png");
   }
 
-.size{
-  width:100%;
-  height:20em;
-}
-
-#textb{
-  position: absolute;
-  top: 1.25em;
-  left: 1.5em;
-  font-family: Georgia, serif;
-  font-size: 2em;
-}
-
-#textl{
-  position: absolute;
-  top: 1.25em;
-  left: 1.5em;
-  font-family: Georgia, serif;
-  font-size: 2em;
-}
-
-#textm{
-  position: absolute;
-  top: 1.25em;
-  left: 1.5em;
-  font-family: Georgia, serif;
-  font-size: 2em;
-}
-
-#textr{
-  position: absolute;
-  top: 1.25em;
-  left: 1.5em;
-  font-family: Georgia, serif;
-  font-size: 2em;
-}
-
-.previewb {
-  position: relative;
-  float:left;
-  margin-bottom: 2em;
-}
-
-.previewl {
-  position: relative;
-  float:left;
-  margin-bottom: 2em;
-}
-
-.previewm {
-  position: relative;
-  float:left;
-  margin-bottom: 2em;
-}
-
-.previewr {
-  position: relative;
-  float:left;
-}
-
-@media screen and (min-width: 575px){
-  .size{
-    width:30em;
-    height:20em;
-  }
-  .previewb {
-    position: relative;
-    float:left;
-    margin-left:10%;
-    margin-bottom: 1.25em;
+.madrid {
+  background-image: url("../images/madrid.jpg");
   }
 
-  .previewl {
-    position: relative;
-    float:left;
-    margin-left:1.25em;
-    margin-bottom: 1.25em;
-  }
-
-  .previewm {
-    position: relative;
-    float:left;
-    margin-left:10%;
-  }
-
-  .previewr {
-    position: relative;
-    float:left;
-    margin-left:1.25em;
-  }
-
-  }
-
-@media screen and (min-width: 991px){
-  .size{
-    width:20em;
-    height:20em;
-  }
-
-  .previewb {
-    position: relative;
-    float:left;
-    margin-left:20%;
-  }
-
-  .previewl {
-    position: relative;
-    float:left;
-    margin-left:3em;
+.rome {
+  background-image: url("../images/rome.jpg");
     }
 
-  .previewm {
-    position: relative;
-    float:left;
-    margin-left:3em;
+@media screen and (min-width: 575px){
+  .container{
+    width:80%;
   }
-
-  .previewr {
-    position: relative;
-    float:left;
-    margin-left:3em;
-
-   }
+  .container> h1 {
+    text-align: center;
   }
+  .preview {
+    display: inline-block;
+    margin:1%;
+    height: 20em;
+    width:38%;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .container{
+    width:80%;
+  }
+  .container> h1 {
+    text-align: center;
+  }
+  .preview{
+    display: inline-block;
+    margin:1%;
+    height: 20em;
+    width:17%;
+  }
+}
